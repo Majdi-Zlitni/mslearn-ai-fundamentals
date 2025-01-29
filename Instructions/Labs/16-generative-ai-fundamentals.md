@@ -41,7 +41,9 @@ In this exercise, you will use Microsoft Copilot to generate travel plans.
 
 1. Review the response, which should explain the reasoning.
 
-1. Let's provide a source to ground the response in a specific scope of information. Download and extract this image of two people doing yoga. Select the "+" in the chat box and upload an image. Then enter the following prompt: 
+1. Let's provide a source to ground the response in a specific scope of information. In a web browser, open the image of two people doing yoga [wellbeing.jpg](https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-fundamentals/sheryang-ai-foundry/Instructions/Labs/media/wellbeing.jpg) at `https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-fundamentals/sheryang-ai-foundry/Instructions/Labs/media/wellbeing.jpg`. 
+
+1. In Microsoft Copilot, select the **+** in the chat box and upload an image. Then enter the following prompt: 
     
     ```prompt
     Where can I do the activity in the photo in your top recommended destination? 
