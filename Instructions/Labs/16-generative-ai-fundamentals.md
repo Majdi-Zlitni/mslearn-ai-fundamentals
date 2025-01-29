@@ -16,7 +16,6 @@ In this exercise, you will use Microsoft Copilot to generate travel plans.
 
     >**Note**: If you are already signed in, you will be prompted to continue with your **Work** or  **Personal** account. Select **Personal** and sign in. 
 
-
 >Consider the following ways you can improve the response a generative AI assistant provides:
 > - Start with a specific goal for what you want the assistant to do
 > - Provide a source to ground the response in a specific scope of information
@@ -64,7 +63,7 @@ In this exercise, you will use Microsoft Copilot to generate travel plans.
     Create an invitation for a trip here
     ```
 
-1. Review the response. You may notice that some of the destinations are not part of the original list. This makes sense if you think about what is happening with text generation: the language model .. .. 
+1. Review the response. You may notice that some of the text does nto make sense. This makes sense if you think about what is happening with text generation (more)
 
     > **Important**: The specific response may vary. The AI-generated response is based on information publicly on the Web. While it may be useful to help you understand the steps required to set up a business, it is not guaranteed to be 100% accurate and does not replace the need for professional advice!
 
