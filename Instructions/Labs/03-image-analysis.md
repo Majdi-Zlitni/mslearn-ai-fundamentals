@@ -25,7 +25,7 @@ Suppose the fictitious retailer *Northwind Traders* has decided to implement a "
 
     > **Important**: You will need an Azure AI services resouce provisioned in a specific location to complete the rest of the lab.
 
-1. In the same *Create a project* pane, select **Customize** and select one of the following **Locations**: *East US, France Central, Korea Central, West Europe, or West US* to complete the rest of the lab. Then select **create**. 
+1. In the same *Create a project* pane, select **Customize** and select one of the following **Locations**: *East US, France Central, Korea Central, West Europe, or West US* to complete the rest of the lab. Select **Next** and then select **create**. 
 
 1. Take note of the resources that are created: 
     - Azure AI services
@@ -75,7 +75,7 @@ Let's use the image captioning functionality of Azure AI Vision to analyze image
 
 ## Tagging images 
 
-The next feature you will try is the **Extract Tags** functionality. Extract tags is based on thousands of recognizable objects, including living beings, scenery, and actions.
+The next feature you will try is the *Extract Tags* functionality. Extract tags is based on thousands of recognizable objects, including living beings, scenery, and actions.
 
 1. Return to the *Vision + Document* page of Azure AI Foundry, then select the **Image** tab, and select the **Common tag extraction** tile.
 

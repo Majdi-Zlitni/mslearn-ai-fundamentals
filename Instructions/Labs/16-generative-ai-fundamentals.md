@@ -62,11 +62,19 @@ In this exercise, you will use Microsoft Copilot to generate travel plans.
 1. Enter the following prompt: 
 
     ```prompt
-    Create an invitation for a trip here
+    What are three hotel recommendations here close to public transportation?
     ```
 
-1. Review the response. You may notice that some of the text does nto make sense. This makes sense if you think about what is happening with text generation (more)
+1. Review the response. 
 
-    > **Important**: The specific response may vary. The AI-generated response is based on information publicly on the Web. While it may be useful to help you understand the steps required to set up a business, it is not guaranteed to be 100% accurate and does not replace the need for professional advice!
+1. Enter the following prompt: 
+
+    ```prompt
+    Create an image of an invitation for a trip here
+    ```
+
+1. Review the response. You may notice that some of the text does not make sense. This makes sense if you think about what is happening with text generation level. 
+
+    > **Important**: The specific response may vary. The AI-generated response is based on information publicly on the Web. While it can be used to assist you, it is not guaranteed to be 100% accurate and does not replace the need for human re4view.
 
 1. When you are done, you can close the window. 
