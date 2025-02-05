@@ -76,7 +76,6 @@ Azure AI Content Safety enables you to moderate text and image content. In this 
 
 ## Try out text moderation with Content Safety in Azure AI Foundry portal 
 
-
 1. On the *Content Safety* page, under *Filter text content*, select **Moderate text content**.
 
 2. Under run a simple test, click **Safe Content**. Notice that text is displayed in the box below. 
