@@ -101,3 +101,4 @@ Generative AI describes a category of capabilities within AI that create content
 
 1. Review the response, which should provide a numbered list of sights to see in Paris.
 
+1. When you are done, you can close the browser window.
