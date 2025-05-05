@@ -9,7 +9,7 @@ lab:
 
 In this exercise, you will use Azure AI Content Understanding in Azure AI Foundry portal, Microsoft's platform for creating intelligent applications, to recognize data from an invoice. 
 
-This exercise takes approximately **20** minutes.
+This exercise takes approximately **25** minutes.
 
 ## Create an Azure AI Foundry project
 
