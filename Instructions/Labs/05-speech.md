@@ -26,14 +26,6 @@ In this exercise, you will use Azure AI Speech in Azure AI Foundry portal, Micro
 > **Important**: You will need an Azure AI services resouce provisioned in a specific location to complete the rest of the lab.
 
 1. In the same *Create a project* pane, select **Customize** and select one of the following **Locations**: East US, France Central, Korea Central, West Europe, or West US to complete the rest of the lab. Then select **create**. 
-
-1. Take note of the resources that are created: 
-- Azure AI services
-- Azure AI hub
-- Azure AI project
-- Storage account
-- Key vault
-- Resource group  
  
 1. After the resources are created, you will be brought to your project's *Overview* page. On the left-hand menu on the screen, select **AI Services**.
  

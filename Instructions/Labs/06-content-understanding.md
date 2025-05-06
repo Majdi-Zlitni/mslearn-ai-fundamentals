@@ -7,7 +7,7 @@ lab:
 
 **Azure AI Content Understanding (preview)** uses generative AI to process content of many types (documents, images, videos, and audio) into a user-defined output format.
 
-In this exercise, you will use Azure AI Content Understanding in Azure AI Foundry portal, Microsoft's platform for creating intelligent applications, to recognize data from an invoice. 
+In this exercise, you will use Azure AI Content Understanding in Azure AI Foundry portal, Microsoft's platform for creating intelligent applications, to recognize data from invoices. 
 
 This exercise takes approximately **25** minutes.
 
@@ -36,14 +36,6 @@ Let's start by creating an Azure AI Foundry project.
 1. When your project is created, close any tips that are displayed and review the project page in Azure AI Foundry portal, which should look similar to the following image:
 
     ![Screenshot of a Azure AI project details in Azure AI Foundry portal.](./media/ai-foundry-project.png)
-
-1. Take note of the resources that are created: 
-    - Azure AI services
-    - Azure AI hub
-    - Azure AI project
-    - Storage account
-    - Key vault
-    - Resource group  
  
 1. Navigate to the left-hand menu on the screen. Then select **AI Services**.
  
