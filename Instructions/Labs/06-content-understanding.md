@@ -1,9 +1,9 @@
 ---
 lab:
-    title: 'Extract data from documents in Azure AI Foundry portal​'
+    title: 'Extract data with Content Understanding in Azure AI Foundry portal​'
 ---
 
-# Extract data from documents in Azure AI Foundry portal
+# Extract data with Content Understanding in Azure AI Foundry portal
 
 **Azure AI Content Understanding (preview)** uses generative AI to process content of many types (documents, images, videos, and audio) into a user-defined output format.
 
@@ -53,44 +53,46 @@ Let's start by creating an Azure AI Foundry project.
 
 ## Analyze an invoice with Azure AI Content Understanding in Azure AI Foundry 
 
-You are now ready to analyze an invoice for the fictitious Contoso retail company.
+Suppose you want to extract data from many invoices and put the data into a database. You can use Azure AI Content Understanding to analyze one invoice and build your own analyzer that can analyze other similar invoices. Let's start by creating a content understanding task.
+
+1. Select **Custom analyzer**. 
 
 1. Select **+ Create** and use the following settings to create a content understanding task:
-    - **Task name**: contoso-receipt
-    - **Description**: A receipt analysis task
+    - **Task name**: contoso-invoice
+    - **Description**: An invoice analysis task
     - **Azure AI services connection**: *Use the default*
     - **Azure Blob Storage account**: *Use the default*
 
 1. Select **Create**, then wait for your task to be created. 
-1. Select your *contoso-receipt* task. 
+1. Select your *contoso-invoice* task. 
 
 #### Define your schema 
 
-1. On the *Define Schema* page, you can add test files. Download a sample receipt [here](https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-fundamentals/refs/heads/content-understanding/data/contoso-receipt-1.pdf). 
-1. Upload the file and select the *Invoice analysis* template. The invoice template has pre-selected data fields that the analyzer will try and detect. 
-1. Select **Create**. You have the ability to modify the schema by adding or deleting fields. When you are done reviewing the fields, select **Save**.
+1. On the *Define Schema* page, you can add test files. Download a sample invoice from the fictious company Contoso [here](https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-fundamentals/refs/heads/content-understanding/data/contoso-receipt-1.pdf). 
+1. Upload the file to the *define schema* page. Select the *Invoice analysis* template. The invoice template has pre-selected data fields that the analyzer will try to detect. 
+1. Select **Create**. Now you have the ability to modify the schema by adding or deleting fields. When you are done reviewing the fields, select **Save**.
 1. Wait for the analysis to run. This may take a moment.
 
 #### Test the analyzer 
 
 1. When the analysis is finished, you will be able to see how the analyzer has done in the *Test Analyzer* page. Review the *Fields* tab. Does this data align with what you see on the invoice? 
-1. The *confidence score* represents how confident the model is that its result is accurate. 
+1. Notice the *confidence score* next to each field. The confidence score represents how confident the model is that its result is accurate. Results with confidence scores closer to 100% indicate greater confidence in the prediction.
 1. Review the *Results* tab. The same information that you see rendered in the fields tab is in the results tab in JSON. The JSON shows how the information looks when it is sent to and from a client application. 
-1. The Content Understanding service should have correctly identified the text that corresponds to the fields in the schema. If it had not done so, you could use the Label data page to upload another sample form and explicitly identify the correct text for each field. When you are satisfied with how well the analyzer is able to detect the data in the invoice, select the **Build Analyzer** tab. 
+1. The Content Understanding service should have correctly identified the text that corresponds to the fields in the schema. If it had not done so, you could use the *Label data* page to upload another sample form and explicitly identify the correct text for each field. When you are satisfied with how well the analyzer is able to detect the data in the invoice, select the **Build Analyzer** tab. 
 
 #### Build your analyzer 
 
-Now that you have trained a model to extract fields from your sample invoice, you can build an analyzer to use with similar forms.
+Now that you have trained a model to extract fields from your sample invoice, you can build an analyzer to use with similar forms. By building an analyzer, you can deploy the model and use it to automate other invoice tasks.
 
 1. In the *Build Analyzer* tab, select **+ Build Analyzer**. Enter the following: 
     - **Name**: invoice-analyzer
     - **Description**: An invoice analyzer
 
-1. Select **Build**. Wait for the new analyzer to be ready (use the Refresh button to check).
-1. Download a test receipt [here](https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-fundamentals/refs/heads/content-understanding/data/contoso-receipt-2.pdf).
-1. Return to the Build analyzer page and select the invoice-analyzer link. The fields defined in the analyzer’s schema will be displayed.
+1. Select **Build**. Wait for the new analyzer to be ready (use the Refresh button to check). Your analyzer uses a predictive model that is based on the schema you have defined and tested in previous steps. 
+1. Now let's try testing the analyzer you built. Download a different invoice from Contoso [here](https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-fundamentals/refs/heads/content-understanding/data/contoso-receipt-2.pdf).
+1. Return to the *Build analyzer* page and select the invoice-analyzer link. The fields defined in the analyzer’s schema will be displayed.
 1. In the invoice-analyzer page, select *Test*.
-1. Use the **+ Upload test files** button to upload *contoso-receipt-2.pdf* and run the analysis to extract field data from the test form.
+1. Use the **+ Upload test files** button to upload *contoso-receipt-2.pdf* and run the analysis to extract field data from the test form. Review the results of the test. When developers are satisfied with the test, they can 
 
 ## Clean up
 
