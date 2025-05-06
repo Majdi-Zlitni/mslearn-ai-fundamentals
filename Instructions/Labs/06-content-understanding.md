@@ -66,7 +66,7 @@ You are now ready to analyze an invoice for the fictitious Contoso retail compan
 
 #### Define your schema 
 
-1. On the *Define Schema* page, you can add test files. Download a sample receipt [here](https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-fundamentals/refs/heads/content-understanding/Instructions/data/contoso-receipt-1.pdf). 
+1. On the *Define Schema* page, you can add test files. Download a sample receipt [here](https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-fundamentals/refs/heads/content-understanding/data/contoso-receipt-1.pdf). 
 1. Upload the file and select the *Invoice analysis* template. The invoice template has pre-selected data fields that the analyzer will try and detect. 
 1. Select **Create**. You have the ability to modify the schema by adding or deleting fields. When you are done reviewing the fields, select **Save**.
 1. Wait for the analysis to run. This may take a moment.
@@ -87,7 +87,7 @@ Now that you have trained a model to extract fields from your sample invoice, yo
     - **Description**: An invoice analyzer
 
 1. Select **Build**. Wait for the new analyzer to be ready (use the Refresh button to check).
-1. Download a test receipt [here](https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-fundamentals/refs/heads/content-understanding/Instructions/data/contoso-receipt-2.pdf).
+1. Download a test receipt [here](https://raw.githubusercontent.com/MicrosoftLearning/mslearn-ai-fundamentals/refs/heads/content-understanding/data/contoso-receipt-2.pdf).
 1. Return to the Build analyzer page and select the invoice-analyzer link. The fields defined in the analyzer’s schema will be displayed.
 1. In the invoice-analyzer page, select *Test*.
 1. Use the **+ Upload test files** button to upload *contoso-receipt-2.pdf* and run the analysis to extract field data from the test form.
